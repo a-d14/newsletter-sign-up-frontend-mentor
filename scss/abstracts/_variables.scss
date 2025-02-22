@@ -1,0 +1,21 @@
+@use 'functions' as f;
+
+$white: #FFFFFF;
+$grey: #949494;
+$blue-700: #36384D;
+$blue-800: #242742;
+$red: #FF6155;
+$gradient: linear-gradient(to right, #FF6A3A, #FF527B);
+
+$text-preset-1: f.rem(56)/1 'Roboto Bold', sans-serif;
+$text-preset-1-mobile: f.rem(40)/1 'Roboto Bold', sans-serif;
+$text-preset-2: f.rem(16)/1.5 'Roboto', sans-serif;
+$text-preset-2-bold: f.rem(16)/1.5 'Roboto Bold', sans-serif;
+$text-preset-3: f.rem(12)/1.5 'Roboto Bold', sans-serif;
+
+$spacing-100: f.rem(8);
+$spacing-200: f.rem(16);
+$spacing-300: f.rem(24);
+$spacing-400: f.rem(32);
+$spacing-500: f.rem(40);
+$spacing-600: f.rem(48);

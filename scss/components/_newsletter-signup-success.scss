@@ -1,0 +1,10 @@
+@use "../abstracts" as a;
+
+.newsletter-sign-up-success-component {
+    padding: 0 a.$spacing-200;
+    @include a.flex(column, $gap: a.$spacing-400);
+
+    img {
+        align-self: flex-start;
+    }
+}

@@ -1,0 +1,14 @@
+@use "../abstracts" as a;
+
+.newsletter-sign-up-component {
+    @include a.flex(column, $gap: a.$spacing-500);
+
+    &__details {
+        padding: 0 a.$spacing-300;
+        @include a.flex(column, $gap: a.$spacing-300);
+    }
+
+    li {
+        @include a.flex($align-items: flex-start, $gap: a.$spacing-200);
+    }
+}

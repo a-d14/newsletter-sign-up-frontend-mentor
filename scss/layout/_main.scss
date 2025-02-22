@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as m;
+
+main {
+    width: 100%;
+    @include m.flex(column, center, center);
+}

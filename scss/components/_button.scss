@@ -1,0 +1,19 @@
+@use "../abstracts" as a;
+
+%btn {
+    padding: a.$spacing-200 0;
+    border-radius: a.$spacing-100;
+}
+
+.btn-subscribe,
+.btn-dismiss {
+    @extend %btn;
+    background-color: a.$blue-800;
+    font: a.$text-preset-2-bold;
+    color: a.$white;
+
+    &:hover {
+        cursor: pointer;
+        background: a.$gradient;
+    }
+}

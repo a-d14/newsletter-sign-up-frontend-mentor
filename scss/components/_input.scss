@@ -1,0 +1,22 @@
+@use "../abstracts" as a;
+
+input {
+    display: block;
+    padding: a.$spacing-200 a.$spacing-300;
+    border: 1px solid a.$grey;
+    border-radius: a.$spacing-100;
+
+    &::placeholder {
+        font: a.$text-preset-2;
+        color: a.$grey;
+    }
+
+    &.error {
+        border: 1px solid a.$red;
+        background-color: rgba(255, 106, 58, 0.1);
+
+        &::placeholder {
+            color: a.$red;
+        }
+    }
+}

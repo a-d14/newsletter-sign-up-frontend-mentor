@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+body {
+    font: v.$text-preset-2;
+}
+
+h2 {
+    font: v.$text-preset-1-mobile;
+
+    @media all and (min-width: 1440px) {
+        font: v.$text-preset-1;
+    }
+}
+
+label,
+span {
+    font: v.$text-preset-3;
+}
