@@ -14,34 +14,36 @@
         <source media="(min-width: 1440px)" srcset="assets/images/illustration-sign-up-desktop.svg" />
         <img src="assets/images/illustration-sign-up-mobile.svg" alt="sign up" />
       </picture>
-      <section class="newsletter-sign-up-component__details">
-        <h2>Stay updated!</h2>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul role="list">
-          <li>
-            <img src="assets/images/icon-list.svg" alt="newsletter feature">
-            Product discovery and building what matters
-          </li>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="newsletter feature">
-            Measuring to ensure updates are a success
-          </li>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="newsletter feature">
-            And much more!
-          </li>
-        </ul>
+      <section class="newsletter-sign-up-component__body">
+        <section class="newsletter-sign-up-component__details">
+          <h2>Stay updated!</h2>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul role="list">
+            <li>
+              <img src="assets/images/icon-list.svg" alt="newsletter feature">
+              Product discovery and building what matters
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="newsletter feature">
+              Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="newsletter feature">
+              And much more!
+            </li>
+          </ul>
+        </section>
+        <form class="newsletter-sign-up-component__form" novalidate>
+          <fieldset class="newsletter-sign-up-component__form-controls">
+            <label for="email">
+              <span>Email address</span>
+              <span class="error-message hidden">Valid email required</span>
+            </label>
+            <input id="email" type="email" name="email" placeholder="email@company.com" required>
+          </fieldset>
+          <button class="btn-subscribe">Subscribe to monthly newsletter</button>
+        </form>
       </section>
-      <form novalidate>
-        <fieldset class="newsletter-sign-up-component__form-controls">
-          <label for="email">
-            <span>Email address</span>
-            <span class="error-message hidden">Valid email required</span>
-          </label>
-          <input id="email" type="email" name="email" placeholder="email@company.com" required>
-        </fieldset>
-        <button class="btn-subscribe">Subscribe to monthly newsletter</button>
-      </form>
     </section>
     <section class="newsletter-sign-up-success-component hidden">
       <img src="assets/images/icon-success.svg" alt="success">

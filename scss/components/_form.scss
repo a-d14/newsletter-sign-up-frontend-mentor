@@ -1,7 +1,6 @@
 @use "../abstracts" as a;
 
 form {
-    padding: 0 a.$spacing-300;
     @include a.flex(column, $gap: a.$spacing-200);
 
     fieldset {

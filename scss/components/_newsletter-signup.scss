@@ -2,13 +2,63 @@
 
 .newsletter-sign-up-component {
     @include a.flex(column, $gap: a.$spacing-500);
+    background-color: a.$white;
 
-    &__details {
+    width: 100%;
+    max-width: a.rem(904);
+
+    border-top-left-radius: a.rem(36);
+    border-top-right-radius: a.rem(36);
+
+    padding-bottom: a.$spacing-100;
+
+    picture > img {
+        width: 100%;
+        height: auto;
+        
+        @media all and (min-width: 768px) {
+            border-top-left-radius: a.$spacing-300;
+            border-top-right-radius: a.$spacing-300;
+        }
+        
+    }
+
+    &__body {
+        @include a.flex(column, $gap: a.$spacing-500);
+
+        @media all and (min-width: 768px) {
+            gap: a.$spacing-300;
+        }
+    }
+
+    &__details,
+    &__form {
         padding: 0 a.$spacing-300;
         @include a.flex(column, $gap: a.$spacing-300);
+
+        @media all and (min-width: 768px) {
+            padding: 0;
+        }
+
+        @media all and (min-width: 1440px) {
+            gap: a.$spacing-400;
+        }
     }
 
     li {
         @include a.flex($align-items: flex-start, $gap: a.$spacing-200);
+    }
+
+    @media all and (min-width: 768px) {
+        padding: a.$spacing-500;
+    }
+
+    @media all and (min-width: 1440px) {
+        padding: a.$spacing-400;
+        @include a.flex(row-reverse, $gap: a.$spacing-800);
+
+        &__body {
+            align-self: center;
+        }
     }
 }

@@ -2,9 +2,27 @@
 
 .newsletter-sign-up-success-component {
     padding: 0 a.$spacing-200;
-    @include a.flex(column, $gap: a.$spacing-400);
+    height: 100vh;
+    @include a.flex(column, center, $gap: a.$spacing-400);
+
+    background-color: a.$white;
 
     img {
         align-self: flex-start;
+    }
+
+    @media all and (min-width: 768px) {
+
+        width: 100%;
+        max-width: a.rem(504);
+        height: auto;
+
+        padding: a.$spacing-800;
+        border-radius: a.rem(36);
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

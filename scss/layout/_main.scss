@@ -1,6 +1,8 @@
-@use "../abstracts/mixins" as m;
+@use "../abstracts" as a;
 
 main {
     width: 100%;
-    @include m.flex(column, center, center);
+    @include a.flex(column, center, center);
+    
+    position: relative;
 }

@@ -1,7 +1,19 @@
 @use "../abstracts" as a;
 
 footer {
+    width: 100%;
+    background-color: a.$white;
+
+    margin-top: -1px;
+
     padding: a.$spacing-200 0;
     font-size: a.rem(14);
     text-align: center;
+
+    max-width: a.rem(904);
+
+    @media all and (min-width: 768px) {
+        border-bottom-left-radius: a.rem(36);
+        border-bottom-right-radius: a.rem(36);
+    }
 }
